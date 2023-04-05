@@ -28,3 +28,5 @@ build-backend = "poetry.core.masonry.api"
 
 # Secrets to be set from streamlit : Pinecone API key and OpenAI API Key
 [API_KEYS]
+    pinecone = "2c589469-b7df-43fe-ac65-a44859ea0895"
+    openai = "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"
