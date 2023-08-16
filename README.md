@@ -82,7 +82,8 @@ These are the steps:
       --max_attempts 5 \
       --logging_level 20
 
-4. Run `p4.convert_jsonl_with_embeddings_to_csv.py` with the new jsonl file to make a pretty CSV with the text and embeddings. This is cosmetic and a bit of a waste of time in the process, feel free to clean it up.
+4. Run `p4.convert_jsonl_with_embeddings_to_csv.py` with the new jsonl file to make a pretty CSV with the text and embeddings. 
+~~This is cosmetic and a bit of a waste of time in the process, feel free to clean it up.~~.  -> actually that's not quite true: you don't care about making the CSV because you don't need to care about the index of the embeddings **if you are only going to upload data to the index once**, if you are going to be updating the indexing and adding more data, or need an offline / readable format to keep track of things then making the CSV kinda makes sense :)
 
 [//]: # 
 
@@ -113,3 +114,27 @@ At the moment there is some data in sample_data, all taken from Kaggle as exampl
 
 
 BETTER DOCS COMING SOON! Feel free to contribute them :)
+
+#LICENSE
+
+MIT License
+
+Copyright (c) 2023 Stephan Sturges
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
